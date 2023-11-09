@@ -1,0 +1,269 @@
+.cover {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+
+.three {
+    width: 80%;
+    margin: 10px auto;
+    margin-top: 5px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.three-box {
+    height: 200px;
+    width: 100%;
+    background-image: url(a4.jpg);
+    background-size: cover;
+    background-position: 90% 10%;
+}
+
+.three-box button {
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.308);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    margin-top: 7%;
+    border: none;
+    border-radius: 3px;
+}
+
+.sub-menu {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: -10px;
+    height: auto;
+}
+
+.sub-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.sub-menu ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sub-menu ul li a {
+    color: rgb(0, 89, 255);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sub-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content-box {
+    height: auto;
+}
+
+.main-content-box:first-child {
+    width: 70%;
+    margin: 0;
+}
+
+.main-content-box:first-child h1 {
+    font-size: 17px;
+    color: rgb(74, 86, 105);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.main-content-article {
+    margin: 0;
+    height: auto;
+}
+
+.article-cage {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.art-box {
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.art-img {
+    height: 120px;
+    width: 100%;
+    background: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.art-img i {
+    font-size: 100px;
+    color: white;
+    margin: auto;
+}
+
+.art-cont {
+    width: 100%;
+    height: auto;
+}
+
+.art-box .art-cont h1 {
+    font-size: 14px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    color: rgb(74, 86, 105);
+}
+
+.art-box .art-cont p {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+    color: rgb(74, 86, 105);
+    text-transform: capitalize;
+}
+
+.news {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content-box:last-child {
+    width: 29%;
+    display: block;
+}
+
+.minst {
+    width: 90%;
+    margin: auto;
+}
+
+.minst:first-child {
+    height: auto;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.minst h1 {
+    font-size: 16px;
+    color: rgb(74, 86, 105);
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.minst p {
+    font-size: 14px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.minst p a {
+    color: rgb(0, 89, 255);
+}
+
+.minst p a:hover {
+    text-decoration: none;
+}
+
+.minst:last-child {
+    height: auto;
+    padding-bottom: 0px;
+}
+
+.minst:last-child h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1100px) {
+    .article-cage {
+        justify-content: space-between;
+    }
+    .art-box {
+        width: 22%;
+        height: auto;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:950px) {
+    .main-content-box:first-child {
+        width: 74%;
+    }
+    .main-content-box:last-child {
+        width: 25%;
+    }
+    .article-cage {
+        justify-content: flex-start;
+    }
+    .art-box {
+        width: 25%;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:799px) {
+    .main-content-box:first-child {
+        width: 100%;
+    }
+    .main-content-box:last-child {
+        width: 100%;
+    }
+    .minst {
+        width: 100%;
+    }
+    .article-cage {
+        justify-content: flex-start;
+    }
+    .art-box {
+        width: 28%;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .art-box {
+        width: 40%;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:410px) {
+    .art-box {
+        width: 60%;
+        height: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}

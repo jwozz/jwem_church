@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Jesus Worship Ebenezer Ministry</title>
+
+    <style>
+        body {
+            background: rgb(106, 0, 168);
+            overflow: hidden;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-ms-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .load {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        
+        .blink-image {
+            animation: blink normal 2s infinite ease-in-out;
+            /*opera*/
+            -o-animation: blink normal 2s infinite ease-in-out;
+            /*o*/
+            -moz-animation: blink normal 2s infinite ease-in-out;
+            /*firefox*/
+            -webkit-animation: blink normal 2s infinite ease-in-out;
+            /*webkit*/
+            -ms-animation: blink normal 2s infinite ease-in-out;
+            /*ie*/
+            height: 100px;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="load">
+        <img class="blink-image" src="LOG4.PNG">
+        <script>
+            // loader script
+
+            (function() {
+                var preload = document.getElementById("preload");
+                var loading = 0;
+                var id = setInterval(frame, 64);
+
+                function frame() {
+                    if (loading == 100) {
+                        clearInterval(id);
+                        window.open("church.html", "_self");
+                    } else {
+                        loading = loading + 1;
+                        if (loading == 90) {
+                            preload.style.animation = "fadeout 1s ease";
+                        }
+                    }
+                }
+            })();
+        </script>
+    </div>
+
+</body>
